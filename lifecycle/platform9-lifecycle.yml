@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.platform9.com/release-notes/whats-new-in-pcd-releases-and-updates
+versioning:
+  scheme: calendar
+  current: '2026.1'
+  examples: ['2025.7', '2025.8', '2025.10', '2026.1']
+  api_versioning: openstack-microversions (/nova/v2.1, /keystone/v3)
+  docs: https://docs.platform9.com/release-notes/whats-new-in-pcd-releases-and-updates
+deprecation:
+  policy_url: https://docs.platform9.com/private-cloud-director/getting-started/host-operating-system-support-matrix
+  description: >-
+    Host Operating System Support Matrix documents supported OS versions per PCD
+    release along with deprecation timelines and end-of-support dates.
+status_page: https://status.platform9.com/
+support:
+  portal: https://support.platform9.com/
+  community: https://www.reddit.com/r/platform9/
+roadmap:
+  note: Upcoming/Kubernetes roadmap published within versioned release-notes sections.
+deprecated_operations: []
+note: >-
+  deprecated_operations not derivable — no OpenAPI spec is published (docs are
+  GitBook-based).

@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/* on platform9.com and docs.platform9.com
+note: >-
+  No .well-known discovery documents are published. All probed paths returned
+  404. Recorded for auditability; no WellKnown/SecurityTxt pointer emitted.
+hosts:
+- host: https://platform9.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://docs.platform9.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404

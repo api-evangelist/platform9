@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.platform9.com/api-docs/identity-service/authentication.md
+docs: https://docs.platform9.com/api-docs/identity-service/authentication.md
+summary:
+  types: [token, http]
+  model: openstack-keystone-v3
+  token_header: X-Auth-Token
+  identity_base: https://{host}/keystone/v3
+  auth_methods: [password, token, application_credential, totp]
+description: >-
+  Platform9 Private Cloud Director uses OpenStack Keystone v3 identity. Clients
+  authenticate at POST https://{host}/keystone/v3/auth/tokens to obtain a token,
+  then present it on subsequent requests via the X-Auth-Token header. Machine-to-
+  machine automation uses Application Credentials (id/name/secret) rather than
+  user passwords. Multi-factor (TOTP) and Enterprise SSO (SAML/OIDC via Dex) are
+  supported. Tokens can be scoped to a project, domain, or system.
+schemes:
+- name: keystoneToken
+  type: apiKey
+  in: header
+  parameter: X-Auth-Token
+  description: Keystone-issued auth token presented on every authenticated request.
+  sources: [https://docs.platform9.com/api-docs/identity-service/authentication.md]
+- name: keystonePassword
+  type: password
+  flow: POST /keystone/v3/auth/tokens (identity method "password")
+  description: Username/password authentication scoped to a project or domain.
+- name: applicationCredential
+  type: application_credential
+  flow: POST /keystone/v3/auth/tokens (identity method "application_credential")
+  fields: [id, name, secret]
+  description: >-
+    Non-interactive credential for automation and service-to-service auth;
+    supports restricted flag. Recommended for API/CLI automation.
+- name: totp
+  type: mfa
+  description: Time-based one-time password used as a second factor.
+- name: enterpriseSSO
+  type: federation
+  protocols: [SAML2, OIDC]
+  provider: Dex (github.com/platform9/dex)
+  description: Corporate single sign-on federated into Keystone.
+scoping:
+  - project (by id or name, optional domain)
+  - domain (by id or name)
+  - system (all)
+roles: openstack-rbac

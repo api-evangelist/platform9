@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.platform9.com/api-docs
+note: >-
+  Conventions reflect the OpenStack API foundation of Private Cloud Director
+  (Keystone/Nova/Cinder/Neutron/Glance). Derived from the documented API
+  surface and OpenStack platform standards.
+authentication:
+  style: token-header
+  header: X-Auth-Token
+  issuer: Keystone v3 (POST /keystone/v3/auth/tokens)
+  automation: application-credentials
+pagination:
+  style: limit-marker
+  params: [limit, marker]
+  description: >-
+    OpenStack collection endpoints page via a page-size limit and an opaque
+    marker (last-seen resource id); responses include navigational links.
+  response_fields: [links, next]
+versioning:
+  api: openstack-microversions
+  header: OpenStack-API-Version / X-OpenStack-Nova-API-Version
+  path_version: /nova/v2.1, /keystone/v3
+  product: calendar (e.g. 2025.10, 2026.1)
+request_tracing:
+  header: X-Openstack-Request-Id
+  description: Per-request identifier returned by OpenStack services for tracing.
+idempotency:
+  supported: false
+  note: >-
+    No documented idempotency-key header; OpenStack write operations are not
+    idempotency-key based. No Idempotency pointer emitted.
+error_envelope:
+  format: openstack-error
+  shape: '{ "<service_error>": { "code": <int>, "message": "...", "details": "..." } }'
+  cross_reference: errors/ (not derived — no OpenAPI spec published)
+rate_limiting:
+  signaling: openstack-per-project-quotas
+  note: Enforced via per-project/tenant quotas rather than HTTP rate-limit headers.
+cross_links:
+  authentication: authentication/platform9-authentication.yml
+  lifecycle: lifecycle/platform9-lifecycle.yml

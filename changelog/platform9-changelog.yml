@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.platform9.com/release-notes/whats-new-in-pcd-releases-and-updates
+scheme: calendar
+current: '2026.1'
+note: >-
+  Recent window of Private Cloud Director releases captured from the dated
+  release-notes index. Highlights not enumerated per release (index lists titles
+  and dates only); each entry links to its full release note.
+entries:
+- version: April 2026
+  date: '2026-04'
+  url: https://docs.platform9.com/release-notes/april-2026-release
+- version: January 2026
+  date: '2026-01'
+  url: https://docs.platform9.com/release-notes/january-2026-release
+  patches: [January 2026 Patch 1, January 2026 Patch 2]
+- version: October 2025
+  date: '2025-10'
+  url: https://docs.platform9.com/release-notes/october-2025-release
+  patches: [October 2025 Patch 1]
+- version: August 2025
+  date: '2025-08'
+  url: https://docs.platform9.com/release-notes/august-2025-release
+- version: July 2025
+  date: '2025-07'
+  url: https://docs.platform9.com/release-notes/july-2025-release
+- version: June 2025
+  date: '2025-06'
+  url: https://docs.platform9.com/release-notes/june-2025-release
+- version: April 2025
+  date: '2025-04'
+  url: https://docs.platform9.com/release-notes/april-2025-release
+  patches: [April 2025 Patch 1, April 2025 Patch 2]
+- version: February 2025
+  date: '2025-02'
+  url: https://docs.platform9.com/release-notes/february-2025-release
+- version: December 2024
+  date: '2024-12'
+  url: https://docs.platform9.com/release-notes/december-2024-release

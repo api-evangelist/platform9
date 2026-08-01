@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.platform9.com/private-cloud-director/reference/pcdctl-command-line.md
+clis:
+- name: pcdctl
+  official: true
+  language: go
+  description: >-
+    Unified command-line tool for Private Cloud Director. Installs, configures,
+    and automates operations across PCD services (compute, storage, networking,
+    Kubernetes) and supports SSO login.
+  docs: https://docs.platform9.com/private-cloud-director/reference/pcdctl-command-line
+  features:
+  - install and configure PCD services
+  - manage compute / storage / networking resources
+  - Kubernetes cluster operations
+  - SSO login (saml2pf9)
+- name: pf9ctl
+  official: true
+  language: go
+  repo: https://github.com/platform9/pf9ctl
+  description: CLI tool for Platform9 host onboarding and management.
+- name: airctl
+  official: true
+  description: >-
+    Deployment/management CLI for self-hosted PCD management plane (regions,
+    install, upgrade, support bundles).
+  docs: https://docs.platform9.com/private-cloud-director/getting-started/self-hosted/airctl
+authentication:
+  method: keystone-token
+  sso: supported (saml2pf9)

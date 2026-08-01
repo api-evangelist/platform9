@@ -1,8 +1,26 @@
 aid: platform9
 name: Platform9
-description: 'Platform9 is a company surfaced as a portfolio company of redpoint-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Platform9 is an enterprise private cloud company whose flagship Private Cloud Director
+  is a full-featured VMware alternative for running virtual machines and containers on your own
+  hardware. Built on a hardened OpenStack and Kubernetes foundation, it delivers high availability,
+  live migration, dynamic resource rebalancing, and multi-tenancy, and exposes an OpenStack-compatible
+  REST API (Keystone identity, Nova compute, Cinder block storage, Neutron networking, Glance images,
+  and a Kubernetes service) together with the unified pcdctl CLI so teams can automate compute,
+  storage, networking, and cluster operations programmatically at scale. Platform9 also offers Managed
+  OpenStack, Managed Kubernetes, a free Community Edition, and the vJailbreak VMware migration tool.'
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://logo.clearbit.com/platform9.com
 url: https://raw.githubusercontent.com/api-evangelist/platform9/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +30,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1
 tags:
 - Company
 - Infrastructure
-apis: []
+- Private Cloud
+- OpenStack
+- Kubernetes
+- Virtualization
+- IaaS
+- VMware Migration
+- Cloud Management
+apis:
+- name: Platform9 Private Cloud Director API
+  description: 'OpenStack-compatible REST API for Platform9 Private Cloud Director, covering Keystone
+    identity/authentication, Nova compute, Cinder block storage, Neutron networking, Glance images,
+    and a Kubernetes service. Token-based auth via the X-Auth-Token header issued by Keystone v3.'
+  humanURL: https://docs.platform9.com/api-docs
+  baseURL: https://docs.platform9.com/api-docs
+  tags:
+  - Private Cloud
+  - OpenStack
+  - Kubernetes
+  - Compute
+  - Storage
+  - Networking
+  properties:
+  - type: Documentation
+    url: https://docs.platform9.com/
+  - type: APIReference
+    url: https://docs.platform9.com/api-docs
+  - type: Authentication
+    url: authentication/platform9-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +75,47 @@ maintainers:
 common:
 - type: Website
   url: http://platform9.com/
+- type: DeveloperPortal
+  url: https://docs.platform9.com/
+- type: Documentation
+  url: https://docs.platform9.com/private-cloud-director/
+- type: APIReference
+  url: https://docs.platform9.com/api-docs
+- type: GettingStarted
+  url: https://docs.platform9.com/private-cloud-director/getting-started/getting-started
+- type: Support
+  url: https://support.platform9.com/
+- type: Blog
+  url: https://platform9.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/platform9
+- type: Pricing
+  url: https://platform9.com/pricing/
+- type: SignUp
+  url: https://platform9.com/signup/
+- type: PrivacyPolicy
+  url: https://platform9.com/privacy/
+- type: StatusPage
+  url: https://status.platform9.com/
+- type: Deprecation
+  url: https://docs.platform9.com/private-cloud-director/getting-started/host-operating-system-support-matrix
+- type: LLMsTxt
+  url: llms/platform9-llms.txt
+- type: Authentication
+  url: authentication/platform9-authentication.yml
+- type: CLI
+  url: cli/platform9-cli.yml
+- type: Packages
+  url: packages/platform9-packages.yml
+- type: Conventions
+  url: conventions/platform9-conventions.yml
+- type: Conformance
+  url: conformance/platform9-conformance.yml
+- type: Compliance
+  url: conformance/platform9-conformance.yml
+- type: Lifecycle
+  url: lifecycle/platform9-lifecycle.yml
+- type: ChangeLog
+  url: changelog/platform9-changelog.yml
+- type: DomainSecurity
+  url: security/platform9-domain-security.yml

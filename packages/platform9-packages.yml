@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/platform9
+note: >-
+  Platform9 ships first-party CLIs (Go) rather than published client-library
+  SDKs; the Private Cloud Director API is OpenStack-compatible, so standard
+  OpenStack SDKs (openstacksdk, gophercloud) also work but are third-party and
+  not listed here. No first-party package-registry SDK was found, so no SDKs
+  pointer is emitted.
+packages:
+- language: go
+  registry: github
+  name: pcdctl
+  url: https://docs.platform9.com/private-cloud-director/reference/pcdctl-command-line
+  kind: cli
+  official: true
+  description: Unified Private Cloud Director command-line tool.
+- language: go
+  registry: github
+  name: pf9ctl
+  url: https://github.com/platform9/pf9ctl
+  install: go install github.com/platform9/pf9ctl@latest
+  kind: cli
+  official: true
+  description: Platform9 host onboarding/management CLI.
+- language: go
+  registry: github
+  name: vjailbreak
+  url: https://github.com/platform9/vjailbreak
+  kind: tool
+  official: true
+  description: VMware-to-KVM/OpenStack migration tooling.

@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.platform9.com/api-docs
+compliance_programs:
+- name: SOC 2
+  published: true
+  evidence: platform9.com states SOC2-compliant organization
+standards:
+- id: openstack-keystone-v3
+  conforms: true
+  evidence: identity API at /keystone/v3 with token/auth/tokens per OpenStack Keystone
+- id: openstack-compute-nova-v2.1
+  conforms: true
+  evidence: compute API at /nova/v2.1/servers
+- id: openstack-block-storage-cinder
+  conforms: true
+  evidence: block-storage-service API (volumes, snapshots, attachments, backups)
+- id: openstack-networking-neutron
+  conforms: true
+  evidence: networking-service API (networks, ports, subnets)
+- id: openstack-image-glance
+  conforms: true
+  evidence: image-service API (images, image-data, image-tags)
+- id: oidc
+  conforms: true
+  evidence: Enterprise SSO / OIDC via Dex (github.com/platform9/dex)
+- id: saml2
+  conforms: true
+  evidence: Enterprise SSO federation (saml2pf9)
+- id: soc2
+  conforms: true
+  evidence: SOC2-compliant organization (platform9.com)
+- id: oauth2
+  conforms: false
+  evidence: API auth is Keystone token-based, not OAuth2 client flows
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: uses OpenStack error envelope, not application/problem+json
