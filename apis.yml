@@ -8,6 +8,17 @@ description: 'Platform9 is an enterprise private cloud company whose flagship Pr
   and a Kubernetes service) together with the unified pcdctl CLI so teams can automate compute,
   storage, networking, and cluster operations programmatically at scale. Platform9 also offers Managed
   OpenStack, Managed Kubernetes, a free Community Edition, and the vJailbreak VMware migration tool.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
