@@ -42,7 +42,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-10-06'
 x-enrichment:
   date: '2026-07-20'
   status: enriched
@@ -95,6 +95,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://platform9.com/feed/
+  type: BlogRSS
 - type: Website
   url: http://platform9.com/
 - type: DeveloperPortal
