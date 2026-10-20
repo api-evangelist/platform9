@@ -5,11 +5,11 @@ edges:
   type: register
   direction: partner-built
   category: Cloud native landscape
-  evidence: https://github.com/cncf/landscape/blob/3a7d378b1824b82e729a453bb03fa6f1e37557e1/landscape.yml
+  evidence: https://github.com/cncf/landscape/blob/42dd4cd91dad8ec8558ac02467a43f0805b9957a/landscape.yml
   channel: standard-directory
   relationship: standard-participant
   contract_reference:
-    register: CNCF Cloud Native Landscape (github.com/cncf/landscape landscape.yml @3a7d378b18)
+    register: CNCF Cloud Native Landscape (github.com/cncf/landscape landscape.yml @42dd4cd91d)
     spec_file: null
     standard: Cloud Native (CNCF)
     role: cncf-member (Silver)
@@ -32,7 +32,7 @@ edges:
     signal_note: 'participation only: a landscape listing is standard-participant evidence, not depth. Entries,
       categories, tier and projects are CONTEXT, never read (breadth is not credit)'
     detected_by: sweep-cloud-native.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
 - partner_name: CNCF (Kubernetes Certified Service Provider)
@@ -46,7 +46,7 @@ edges:
   relationship: standard-participant
   contract_reference:
     register: CNCF Kubernetes Certified Service Provider (github.com/cncf/landscape landscape.yml Special / Kubernetes
-      Certified Service Provider @3a7d378b18)
+      Certified Service Provider @42dd4cd91d)
     spec_file: null
     standard: Kubernetes (KCSP)
     role: kcsp
@@ -59,7 +59,7 @@ edges:
       lapsed: false
     signal_note: certified_products = ONE entry (the KCSP vetting itself), never a count
     detected_by: sweep-cloud-native.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
 - partner_name: CNCF Certified Kubernetes
@@ -67,12 +67,12 @@ edges:
   partner_match: register
   type: register
   direction: partner-built
-  evidence: https://github.com/cncf/k8s-conformance/tree/85d26a419e7df96137e66817b61cb22a616ce1e9/v1.35/platform9
+  evidence: https://github.com/cncf/k8s-conformance/tree/621a55d41c23eab137118626e941b72fb8d32f89/v1.36/platform9
   category: Certified Kubernetes
   channel: standard-directory
   relationship: standard-participant
   contract_reference:
-    register: CNCF Certified Kubernetes (github.com/cncf/k8s-conformance @85d26a419e)
+    register: CNCF Certified Kubernetes (github.com/cncf/k8s-conformance @621a55d41c)
     spec_file: null
     standard: Kubernetes conformance
     role: certified-kubernetes
@@ -82,7 +82,7 @@ edges:
     matched_by: domain
     certified_products:
     - product: distribution
-      newest_version: v1.35
+      newest_version: v1.36
       lapsed: false
     versions_certified:
     - v1.24
@@ -97,13 +97,14 @@ edges:
     - v1.33
     - v1.34
     - v1.35
+    - v1.36
     products:
     - Platform9 Managed Kubernetes
     current_window: v1.34+ (newest 4 minors in the register)
     signal_note: certified_products = one entry per product TYPE (distribution/hosted/installer), lapsed when its
       newest certified minor is outside the current window; products and versions are context, never read
     detected_by: sweep-cloud-native.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
 - partner_name: CNCF Certified Kubernetes
@@ -111,7 +112,7 @@ edges:
   partner_match: register
   type: register
   direction: partner-built
-  evidence: https://github.com/cncf/k8s-conformance/tree/85d26a419e7df96137e66817b61cb22a616ce1e9/v1.35/platform9
+  evidence: https://github.com/cncf/k8s-conformance/tree/621a55d41c23eab137118626e941b72fb8d32f89/v1.36/platform9
   category: Certified Kubernetes
   channel: standard-directory
   relationship: compatible
@@ -122,15 +123,15 @@ edges:
   note: the Kubernetes conformance suite was run against this product and the result merged into the CNCF register
     (anchor kubernetes)
   contract_reference:
-    register: CNCF Certified Kubernetes (github.com/cncf/k8s-conformance @85d26a419e)
+    register: CNCF Certified Kubernetes (github.com/cncf/k8s-conformance @621a55d41c)
     spec_file: null
     standard: Kubernetes API
     role: kubernetes-conformance
     registered_name: Platform9 Systems, Inc.
     matched_domain: platform9.com
-    newest_version: v1.35
+    newest_version: v1.36
     detected_by: sweep-cloud-native.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
 generated: '2026-10-15'
