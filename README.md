@@ -64,6 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Platform9 is a company surfaced as a portfolio company of redpoint-ventures and added to the API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead awaiting the enrichment pipeline.
+Platform9 is an enterprise private cloud company whose flagship Private Cloud Director is a full-featured VMware alternative for running virtual machines and containers on your own hardware. Built on a hardened OpenStack and Kubernetes foundation, it delivers high availability, live migration, dynamic resource rebalancing, and multi-tenancy, and exposes an OpenStack-compatible REST API (Keystone identity, Nova compute, Cinder block storage, Neutron networking, Glance images, and a Kubernetes service) together with the unified pcdctl CLI so teams can automate compute, storage, networking, and cluster operations programmatically at scale. Platform9 also offers Managed OpenStack, Managed Kubernetes, a free Community Edition, and the vJailbreak VMware migration tool.
 
-Backed by: redpoint-ventures — http://platform9.com/
+**Areas:** Company · Infrastructure · Private Cloud · OpenStack · Kubernetes · Virtualization · Infrastructure-as-a-Service · VMware Migration · Cloud Management
+
+## Platform9 on APIs.io
+
+Everything profiled for Platform9 is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/platform9/](https://apis.io/providers/platform9/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Platform9 Private Cloud Director API](https://apis.io/apis/platform9/platform9-private-cloud-director-api/) — OpenStack-compatible REST API for Platform9 Private Cloud Director, covering Keystone identity/authentication, Nova compute, Cinder block storage, Neutron…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Platform9 Authentication](https://apis.io/security/platform9/platform9-authentication/)
+- [Platform9 Domain Security](https://apis.io/security/platform9/platform9-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](http://platform9.com/)
+- [Documentation](https://docs.platform9.com/private-cloud-director/)
+- [Getting started](https://docs.platform9.com/private-cloud-director/getting-started/getting-started)
+- [API reference](https://docs.platform9.com/api-docs)
+- [Pricing](https://platform9.com/pricing/)
+- [Sign up](https://platform9.com/signup/)
+- [Support](https://support.platform9.com/)
+- [Blog](https://platform9.com/blog/)
+- [Privacy policy](https://platform9.com/privacy/)
+- [GitHub](https://github.com/platform9)
+- [Status](https://status.platform9.com/)
+
+## API Evangelist rating
+
+**Kin Score 37.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 42.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/platform9/](https://apis.io/providers/platform9/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Platform9: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/platform9/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
